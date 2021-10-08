@@ -84,8 +84,6 @@ namespace Trojuhelnik
             {
                 return false;
             }
-
-
         }
     }
 }
