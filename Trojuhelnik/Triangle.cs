@@ -38,34 +38,22 @@ namespace Trojuhelnik
             }
         }
 
-        public void SetA(double value)
+        public double A
         {
-            _a = value;
+            set { if (value > 0) _a = value; }
+            get { return _a; }
         }
 
-        public double GetA()
+        public double B
         {
-            return _a;
+            set { if (value > 0) _b = value; }
+            get { return _b; }
         }
 
-        public void SetB(double value)
+        public double C
         {
-            _b = value;
-        }
-
-        public double GetB()
-        {
-            return _b;
-        }
-
-        public void SetC(double value)
-        {
-            _c = value;
-        }
-
-        public double GetC()
-        {
-            return _c;
+            set { if (value > 0) _c = value; }
+            get { return _c; }
         }
 
         public void SetSides(double valueA, double valueB, double valueC)
