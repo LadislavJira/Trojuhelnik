@@ -109,21 +109,21 @@ namespace Trojuhelnik
         {
             double s = (_a + _b + _c) / 2;
             double alpha = Math.Asin(2 * Math.Sqrt(s * (s - _a) * (s - _b) * (s - _c)) / (_b * _c));
-            alpha = (180 / Math.PI) * alpha;
+            alpha = Math.Round(180 / Math.PI * alpha);
             return alpha;
         }
         public double GetBeta()
         {
             double s = (_a + _b + _c) / 2;
             double beta = Math.Asin(2 * Math.Sqrt(s * (s - _a) * (s - _b) * (s - _c)) / (_a * _c));
-            beta = (180 / Math.PI) * beta;
+            beta = Math.Round(180 / Math.PI * beta);
             return beta;
         }
         public double GetGamma()
         {
             double s = (_a + _b + _c) / 2;
             double gamma = Math.Asin(2 * Math.Sqrt(s * (s - _a) * (s - _b) * (s - _c)) / (_a * _b));
-            gamma = (180 / Math.PI) * gamma;
+            gamma = Math.Round(180 / Math.PI * gamma);
             return gamma;
         }
     }
